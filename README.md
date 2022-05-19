@@ -1,20 +1,16 @@
-# Final project for the Perception in Robotics course
-
-This repository contains the initial stage of the article [gradSLAM: Automagically differentiable SLAM](https://arxiv.org/pdf/1910.10672v3.pdf) implementation.
-
-To run the project you need to install all necessary modules:
+Для запуска проекта вам необходимо установить все необходимые модули:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-To test differentiable Levenberg-Marquardt (LM) solver you can run:
+Чтобы протестировать дифференцируемый метод Левенберга-Марквардта (LM) вы можете запустить:
 
 ```bash
 python3 gradLM_exp.py
 python3 gradLM_sin.py
 ```
 
-or create your own fuction with `Function` interface (see `GradLM.py` module).
+или создайте свою собственную функцию с интерфейсом "Function" (см. `GradLM.py ` модуль).
 
-Also we provide `PoseEstimation` class for further steps.
+Также мы предоставляем класс `PoseEstimation` для дальнейших шагов.
